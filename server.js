@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Serve CSS file with correct MIME type
-app.get('./public/assets/css/styles.css', (req, res) => {
-  res.setHeader('Content-Type', 'text/css');
-  res.sendFile(path.join(__dirname, 'public', 'assets', 'css', 'styles.css'));
-});
+app.get('/assets/css/styles.css', (req, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    res.sendFile(path.join(__dirname, 'public', 'assets', 'css', 'styles.css'));
+  });
 
 // Serve JavaScript file with correct MIME type
 app.get('/assets/js/index.js', (req, res) => {
@@ -33,9 +33,10 @@ app.get('/notes', (req, res) => {
 
 // API Routes
 app.get('/api/notes', (req, res) => {
-  const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
-  res.json(notes);
-});
+    const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+    res.json(notes);
+  });
+  
 
 app.post('/api/notes', (req, res) => {
   const { title, text } = req.body;
