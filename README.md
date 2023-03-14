@@ -2,6 +2,9 @@
 
 This is a simple web application for taking notes. It allows you to create, read, update, and delete notes using a user-friendly interface.
 
+## Link to Deplyed Website 
+https://ancient-atoll-46071.herokuapp.com
+
 ## Features
 
 - Add a new note with a title and text content
@@ -17,6 +20,9 @@ This is a simple web application for taking notes. It allows you to create, read
 3. Install the dependencies by running `npm install`.
 4. Start the server by running `node server.js`.
 5. Open your web browser and go to `http://localhost:3001` to access the application.
+
+## Screenshot
+![image](https://user-images.githubusercontent.com/100619060/224882191-4fa00ed0-c6d1-468d-ad8f-3b878a62b001.png)
 
 ## Usage
 
