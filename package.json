@@ -1,7 +1,7 @@
 {
-  "name": "note-taker",
+  "name": "NoteApp",
   "version": "1.0.0",
-  "description": "",
+  "description": "This website was made so that you can write and track notes",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,11 +10,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1",
+    "uuid": "^3.4.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MadDonald/NoteApp.git"
+    "url": "git+https://github.com/MadDonald/NoteApp"
   },
   "bugs": {
     "url": "https://github.com/MadDonald/NoteApp/issues"
